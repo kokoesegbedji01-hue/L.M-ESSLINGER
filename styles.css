@@ -148,3 +148,47 @@ main, .panel, .card, .metrics, .grid, .topbar, .hero, .carousel { min-width: 0; 
 .nav a,.filter,.button,.view-option,.switch{transition:all .2s ease}.nav a.active{box-shadow:inset 2px 0 0 var(--accent)}
 @media(max-width:720px){.hero-badges{gap:6px}.hero-badges span{font-size:10px;padding:6px 7px}.action-row{gap:8px}.action-row .button{flex:1;min-width:130px}.next-strip{display:block;padding:12px}.next-strip .button{width:100%;margin-top:10px}.glow-cta{animation-duration:3.2s}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* ============================= */
+/* Mobile Navigation Fix */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .mobile-header {
+    display: flex !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .sidebar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(84vw, 310px);
+    height: 100dvh;
+    transform: translateX(-110%);
+    transition: transform 0.25s ease;
+    z-index: 1200;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .screen-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.45);
+    z-index: 1100;
+  }
+
+  .screen-overlay.show {
+    display: block;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+}

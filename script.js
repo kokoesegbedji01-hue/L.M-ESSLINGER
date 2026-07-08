@@ -94,15 +94,47 @@ document.querySelectorAll('.filter').forEach(btn=>{
     if(label) label.textContent = btn.textContent;
   });
 });
+// =============================
+// Mobile Navigation
+// =============================
 
-const menuToggle = document.querySelector('.menu-toggle');
-const sidebar = document.querySelector('.sidebar');
-const overlay = document.querySelector('.screen-overlay');
-function closeMenu(){ sidebar?.classList.remove('open'); overlay?.classList.remove('show'); }
-menuToggle?.addEventListener('click',()=>{ sidebar?.classList.add('open'); overlay?.classList.add('show'); });
-overlay?.addEventListener('click', closeMenu);
-document.querySelectorAll('.sidebar .nav a').forEach(a=>a.addEventListener('click', closeMenu));
-window.addEventListener('resize',()=>{ if(window.innerWidth > 1024) closeMenu(); });
+const menuToggle = document.querySelector(".menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".screen-overlay");
+
+function openMenu() {
+  if (!sidebar || !overlay) return;
+
+  sidebar.classList.add("open");
+  overlay.classList.add("show");
+  document.body.classList.add("menu-open");
+}
+
+function closeMenu() {
+  if (!sidebar || !overlay) return;
+
+  sidebar.classList.remove("open");
+  overlay.classList.remove("show");
+  document.body.classList.remove("menu-open");
+}
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", openMenu);
+}
+
+if (overlay) {
+  overlay.addEventListener("click", closeMenu);
+}
+
+document.querySelectorAll(".sidebar .nav a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1024) {
+    closeMenu();
+  }
+});
 
 const revealObserver = 'IntersectionObserver' in window ? new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
