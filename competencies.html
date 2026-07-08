@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Competencies | L. M. Esslinger</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <button class="menu-toggle" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div>
+      <strong>L. M. Esslinger</strong>
+      <small>AML Executive Dashboard</small>
+    </div>
+
+    <button class="mobile-switch switch" aria-label="Toggle light and dark mode"></button>
+
+    <button
+      class="view-mode-mobile"
+      data-view-toggle
+      aria-label="Switch profile view"
+    >
+      Portfolio
+    </button>
+  </div>
+
+  <div class="screen-overlay" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="eyebrow">AML Intelligence</div>
+        <h1>L. M. Esslinger</h1>
+        <p>CAMS · NP · MS</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">
+          <span class="dot"></span>
+          Overview
+        </a>
+
+        <a href="experience.html">
+          <span class="dot"></span>
+          Career Timeline
+        </a>
+
+        <a class="active" href="competencies.html">
+          <span class="dot"></span>
+          Core Competencies
+        </a>
+
+        <a href="analytics.html">
+          <span class="dot"></span>
+          Analytics
+        </a>
+
+        <a href="contact.html">
+          <span class="dot"></span>
+          Contact
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status">
+          <span></span>
+          Available for opportunities
+        </div>
+
+        <div class="view-toggle" role="group" aria-label="Profile view mode">
+          <button class="view-option active" data-view-option="dashboard">
+            Dashboard
+          </button>
+
+          <button class="view-option" data-view-option="portfolio">
+            Portfolio
+          </button>
+        </div>
+
+        <div class="toggle-row">
+          Theme
+          <button class="switch" aria-label="Toggle light and dark mode"></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Top Bar -->
+      <div class="topbar">
+        <div class="crumb">Competencies / Skills matrix</div>
+
+        <div class="top-actions">
+          <div class="pill" data-current-date>Updated</div>
+          <div class="pill">CAMS</div>
+          <div class="pill">BSA · OFAC · KYC · EDD</div>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <section class="panel hero">
+        <div>
+          <h2>Financial crime capability matrix</h2>
+          <p>
+            Skills built through AML
+            investigations, enterprise QA, regulatory remediation, project
+            reviews, mentoring, analytics, and client relationship work.
+          </p>
+        </div>
+
+        <div class="header-meta">
+          <div class="meta-line">
+            <span>Skill Model</span>
+            <b>Enterprise AML QA</b>
+          </div>
+
+          <div class="meta-line">
+            <span>Included Skills</span>
+            <b>LinkedIn + role history</b>
+          </div>
+
+          <div class="meta-line">
+            <span>Display</span>
+            <b>Filterable competency bars</b>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <a class="button glow-cta" href="analytics.html">
+            View Analytics
+          </a>
+
+          <a class="button" href="experience.html">
+            Career Context
+          </a>
+        </div>
+      </section>
+
+      <!-- Competency Filters -->
+      <div class="section-title">
+        <h3>Filter competencies</h3>
+        <p>Dashboard updates by focus area</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="overview">Overview</button>
+        <button class="filter" data-filter="investigations">Investigations</button>
+        <button class="filter" data-filter="regulatory">Regulatory</button>
+        <button class="filter" data-filter="leadership">Leadership</button>
+        <button class="filter" data-filter="technology">Technology</button>
+      </div>
+
+      <!-- Dynamic Skills + Skill Groups -->
+      <section class="grid two" style="margin-top: 14px;">
+        <div class="panel skills-panel">
+          <div class="skill-head">
+            <h4 id="focusLabel">Overview</h4>
+            <span>Relative emphasis</span>
+          </div>
+
+          <div id="dynamicSkills"></div>
+        </div>
+
+        <div class="card">
+          <h4>Recognizable AML skill groups</h4>
+
+          <div class="skill-group">
+            <div class="skill-head">
+              <h4>Industry Knowledge</h4>
+              <span>AML / BSA / OFAC</span>
+            </div>
+
+            <p>
+              Financial Crimes Investigations, KYC, EDD, SAR writing, CTR,
+              sanctions exposure, regulatory risk, enterprise support,
+              procedure review, project reviews, and compliance remediation.
+            </p>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-head">
+              <h4>Tools & Technologies</h4>
+              <span>Analytics / workflow</span>
+            </div>
+
+            <p>
+              SQL, ACL Analytics, case management workflows, testing protocols,
+              reporting, QA review frameworks, and investigative process
+              optimization.
+            </p>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-head">
+              <h4>Interpersonal Skills</h4>
+              <span>Leadership / clients</span>
+            </div>
+
+            <p>
+              Project manager mentoring, key client relationships, analyst
+              training, leadership, cross-functional collaboration, regulator
+              communication, and operational consistency.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Direct Skills Chart -->
+      <div class="section-title">
+        <h3>Direct skills chart</h3>
+        <p>LinkedIn skills translated into enterprise value</p>
+      </div>
+
+      <section class="panel skills-panel">
+        <div class="skill">
+          <div class="skill-name">Project Remediation</div>
+          <div class="bar">
+            <div class="fill" data-value="95"></div>
+          </div>
+          <div class="skill-value">95%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Project Reviews</div>
+          <div class="bar">
+            <div class="fill" data-value="92"></div>
+          </div>
+          <div class="skill-value">92%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Project Manager Mentoring</div>
+          <div class="bar">
+            <div class="fill" data-value="93"></div>
+          </div>
+          <div class="skill-value">93%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Key Client Relationships</div>
+          <div class="bar">
+            <div class="fill" data-value="90"></div>
+          </div>
+          <div class="skill-value">90%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Enterprise Support</div>
+          <div class="bar">
+            <div class="fill" data-value="91"></div>
+          </div>
+          <div class="skill-value">91%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Procedure Review</div>
+          <div class="bar">
+            <div class="fill" data-value="94"></div>
+          </div>
+          <div class="skill-value">94%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Compliance Remediation</div>
+          <div class="bar">
+            <div class="fill" data-value="95"></div>
+          </div>
+          <div class="skill-value">95%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">ACL Analytics</div>
+          <div class="bar">
+            <div class="fill" data-value="82"></div>
+          </div>
+          <div class="skill-value">82%</div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Leadership</div>
+          <div class="bar">
+            <div class="fill" data-value="96"></div>
+          </div>
+          <div class="skill-value">96%</div>
+        </div>
+      </section>
+
+      <!-- Next CTA -->
+      <div class="next-strip">
+        <span>
+          Next: see the measurable impact behind my skill set.
+        </span>
+
+        <a class="button glow-cta" href="analytics.html">
+          Analytics
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

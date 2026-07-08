@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analytics | L. M. Esslinger</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <button class="menu-toggle" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div>
+      <strong>L. M. Esslinger</strong>
+      <small>AML Executive Dashboard</small>
+    </div>
+
+    <button class="mobile-switch switch" aria-label="Toggle light and dark mode"></button>
+
+    <button
+      class="view-mode-mobile"
+      data-view-toggle
+      aria-label="Switch profile view"
+    >
+      Portfolio
+    </button>
+  </div>
+
+  <div class="screen-overlay" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="eyebrow">AML Intelligence</div>
+        <h1>L. M. Esslinger</h1>
+        <p>CAMS · NP · MS</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">
+          <span class="dot"></span>
+          Overview
+        </a>
+
+        <a href="experience.html">
+          <span class="dot"></span>
+          Career Timeline
+        </a>
+
+        <a href="competencies.html">
+          <span class="dot"></span>
+          Core Competencies
+        </a>
+
+        <a class="active" href="analytics.html">
+          <span class="dot"></span>
+          Analytics
+        </a>
+
+        <a href="contact.html">
+          <span class="dot"></span>
+          Contact
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status">
+          <span></span>
+          Available for opportunities
+        </div>
+
+        <div class="view-toggle" role="group" aria-label="Profile view mode">
+          <button class="view-option active" data-view-option="dashboard">
+            Dashboard
+          </button>
+
+          <button class="view-option" data-view-option="portfolio">
+            Portfolio
+          </button>
+        </div>
+
+        <div class="toggle-row">
+          Theme
+          <button class="switch" aria-label="Toggle light and dark mode"></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Top Bar -->
+      <div class="topbar">
+        <div class="crumb">Analytics / AML dashboard</div>
+
+        <div class="top-actions">
+          <div class="pill" data-current-date>Updated</div>
+          <div class="pill">Power BI-inspired</div>
+          <div class="pill">Enterprise view</div>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <section class="panel hero">
+        <div>
+          <h2>Executive AML analytics view</h2>
+          <p>
+            Clear visual summaries show how this experience maps to the way
+            compliance leaders evaluate financial crime talent: risk coverage,
+            review volume, remediation, readiness, and team enablement.
+          </p>
+        </div>
+
+        <div class="header-meta">
+          <div class="meta-line">
+            <span>Dashboard Type</span>
+            <b>Compliance operations</b>
+          </div>
+
+          <div class="meta-line">
+            <span>Focus</span>
+            <b>QA · Investigation · Remediation</b>
+          </div>
+
+          <div class="meta-line">
+            <span>Audience</span>
+            <b>AML hiring managers</b>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <a class="button glow-cta" href="contact.html">
+            Start Conversation
+          </a>
+
+          <a class="button" href="competencies.html">
+            Skills Matrix
+          </a>
+        </div>
+      </section>
+
+      <!-- Metrics -->
+      <section class="metrics">
+        <div class="metric">
+          <div class="value" data-count="100" data-suffix="+">0</div>
+          <div class="label">Alerts / month resolved</div>
+        </div>
+
+        <div class="metric">
+          <div class="value" data-count="120" data-suffix="+">0</div>
+          <div class="label">QA reviews / month</div>
+        </div>
+
+        <div class="metric">
+          <div class="value" data-count="3" data-suffix="">0</div>
+          <div class="label">Business units strengthened</div>
+        </div>
+
+        <div class="metric">
+          <div class="value" data-count="50" data-suffix="+">0</div>
+          <div class="label">Staff trained</div>
+        </div>
+      </section>
+
+      <!-- Regulatory Focus -->
+      <div class="section-title">
+        <h3>Regulatory focus distribution</h3>
+        <p>Representative weighting based on provided experience</p>
+      </div>
+
+      <section class="grid two">
+        <div class="panel">
+          <div class="card" style="border: 0; box-shadow: none;">
+            <h4>AML operations emphasis</h4>
+            <p>
+             
+            </p>
+          </div>
+
+          <div class="chart">
+            <div class="col">
+              <span style="height: 96%;"></span>
+              <small>QA</small>
+            </div>
+
+            <div class="col">
+              <span style="height: 91%;"></span>
+              <small>AML</small>
+            </div>
+
+            <div class="col">
+              <span style="height: 86%;"></span>
+              <small>KYC</small>
+            </div>
+
+            <div class="col">
+              <span style="height: 78%;"></span>
+              <small>OFAC</small>
+            </div>
+
+            <div class="col">
+              <span style="height: 74%;"></span>
+              <small>Fraud</small>
+            </div>
+
+            <div class="col">
+              <span style="height: 82%;"></span>
+              <small>Training</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel skills-panel">
+          <div class="skill-head">
+            <h4>Enterprise control framework</h4>
+            <span>Maturity view</span>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Investigation Standards</div>
+            <div class="bar">
+              <div class="fill" data-value="98"></div>
+            </div>
+            <div class="skill-value">98%</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Audit Readiness</div>
+            <div class="bar">
+              <div class="fill" data-value="97"></div>
+            </div>
+            <div class="skill-value">97%</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Regulatory Alignment</div>
+            <div class="bar">
+              <div class="fill" data-value="96"></div>
+            </div>
+            <div class="skill-value">96%</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Team Enablement</div>
+            <div class="bar">
+              <div class="fill" data-value="94"></div>
+            </div>
+            <div class="skill-value">94%</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Workflow Optimization</div>
+            <div class="bar">
+              <div class="fill" data-value="91"></div>
+            </div>
+            <div class="skill-value">91%</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enterprise Impact -->
+      <div class="section-title">
+        <h3>Enterprise impact</h3>
+        <p>Simple outcomes visitors can understand quickly</p>
+      </div>
+
+      <section class="grid three">
+        <div class="card">
+          <h4>Reduced compliance gaps</h4>
+          <p>
+            Led QA reviews and risk-focused testing protocols to identify
+            investigative weaknesses before audit or examination.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Improved review consistency</h4>
+          <p>
+            Mentored analysts and standardized SAR writing, KYC file quality,
+            investigation narratives, and escalation discipline.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Supported regulatory confidence</h4>
+          <p>
+            Integrated regulatory updates into workflows and strengthened
+            readiness for internal and external review cycles.
+          </p>
+        </div>
+      </section>
+
+      <!-- Next CTA -->
+      <div class="next-strip">
+        <span>
+          Next: connect directly about AML QA, investigations, and compliance
+          leadership roles.
+        </span>
+
+        <a class="button glow-cta" href="contact.html">
+          Contact
+        </a>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
